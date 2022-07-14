@@ -18,7 +18,7 @@ function TodoForm() {
   return (
     <form onSubmit={handleSubmit} className="flex justify-center mb-10" >
         <input 
-            className="w-80 px-2 bg-gray-800 border-2 border-blue-500 text-gray-100 shadow-lg shadow-black"
+            className="w-72 lg:w-96 px-2 bg-gray-800 border-y-2 border-l-2 border-blue-500 text-gray-100 shadow-lg shadow-black"
             type="text" 
             name="task" 
             placeholder="Enter a task" 

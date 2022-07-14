@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { listState } from "../atoms/listAtom";
 
-function TodoForm(props) {
+function TodoForm() {
     const [input, setInput] = useState('');
     const [list, setList] = useRecoilState(listState);
 
@@ -18,14 +18,14 @@ function TodoForm(props) {
   return (
     <form onSubmit={handleSubmit} className="flex justify-center mb-10" >
         <input 
-            className="w-80 px-2 bg-gray-300"
+            className="w-80 px-2 bg-gray-800 border-2 border-blue-500 text-gray-100 shadow-lg shadow-black"
             type="text" 
             name="task" 
             placeholder="Enter a task" 
             onChange={(e) => setInput(e.target.value)}
             value={input}
         />
-        <button className="h-10 w-20 bg-orange-500">Submit</button>
+        <button className="h-10 w-20 bg-blue-500 shadow-lg shadow-black">Submit</button>
     </form>
   )
 }

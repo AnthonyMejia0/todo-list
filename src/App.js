@@ -7,7 +7,7 @@ function App() {
   const [list, setList] = useRecoilState(listState);
 
   return (
-    <div className="bg-gray-800 h-screen w-screen overflow-scroll">
+    <div className="bg-gray-800 h-screen w-screen overflow-x-hidden overflow-y-scroll scrollbar-hide">
       <h1 className="flex justify-center text-5xl font-edu font-bold py-10 text-gray-100">Things To Do:</h1>
       <TodoForm />
       <div className="flex flex-col space-y-5">

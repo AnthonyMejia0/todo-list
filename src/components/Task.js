@@ -56,9 +56,9 @@ function Task({ text, id }) {
                 />
                 {
                     edit ? 
-                    <form className="ml-2" onSubmit={handleSubmit}>
+                    <form className="bg-white max-w-[85%] ml-2" onSubmit={handleSubmit}>
                         <input 
-                            className="p-1 bg-transparent border border-black"
+                            className="w-full p-1 bg-transparent border border-black"
                             type="text" 
                             autoFocus
                             onChange={(e) => setInput(e.target.value)}

@@ -8,6 +8,6 @@ const { persistAtom } = recoilPersist({
 
 export const listState = atom({
     key: 'listState',
-    default: [],
+    default: [{}],
     effects_UNSTABLE: [persistAtom],
 });

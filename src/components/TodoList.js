@@ -7,10 +7,10 @@ function TodoList() {
 
   return (
     <div className="space-y-4">
-        {list.map((task, index) => (
+        {list.map((todo, index) => (
             <Task 
                 key={index} 
-                text={task}
+                todo={todo}
                 id={index}
             />
         ))}
